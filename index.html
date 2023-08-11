@@ -1,0 +1,58 @@
+<!-- 완성후 git저장소에 업로드, page 주소를 제출하세요 
+
+    제이쿼리에서 animate()에 반드시 easing 속도를 적용하시오
+
+    저장소명 : kakao-slide
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>카카오 슬라이드</title>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<script src="./js/jquery-1.12.4.min.js"></script>
+		<script src="./js/jquery.easing.min.js"></script>
+		<script defer src="./js/function.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<header>
+				<h1 class="text-center">카카오 슬라이드</h1>
+
+				<div class="menu">
+					<ul>
+						<li class="on"><a href="./images/img_talk_cont1.png">무료채팅</a></li>
+						<li>
+							<a href="./images/img_talk_cont1.png">보이스톡 & 페이스톡</a>
+						</li>
+						<li><a href="./images/img_talk_cont1.png">샵 검색</a></li>
+						<li><a href="./images/img_talk_cont1.png">톡게시판</a></li>
+						<li><a href="./images/img_talk_cont1.png">오픈채팅</a></li>
+						<li><a href="./images/img_talk_cont1.png">채널 탭</a></li>
+					</ul>
+				</div>
+			</header>
+
+			<section>
+				<div class="slides">
+					<ol class="slides-container">
+						<li>무료채팅 슬라이드 이미지</li>
+						<li>보이스톡 & 페이스톡 슬라이드 이미지</li>
+						<li>샵 검색 슬라이드 이미지</li>
+						<li>톡게시판 슬라이드 이미지</li>
+						<li>오픈채팅 슬라이드 이미지</li>
+						<li>채널 탭 슬라이드 이미지</li>
+					</ol>
+				</div>
+
+				<div>
+					<a href="#" class="slides-navigation slides-prev">이전</a>
+					<a href="#" class="slides-navigation slides-next">다음</a>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

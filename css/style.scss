@@ -1,0 +1,182 @@
+/*
+btn_talk.png
+사이즈 80*90
+무료채팅{background-position:0 0;}
+보이스톡{background-position:-80px 0;}
+샵검색{background-position:-160px 0;}
+톡게시판{background-position:-240px 0;}
+오픈채팅{background-position:-320px 0;}
+채널탭{background-position:-400px 0;}
+
+무료채팅:hover{background-position:0 -90px;}
+보이스톡:hover{background-position:-80px -90px;}
+샵검색:hover{background-position:-160px -90px;}
+톡게시판:hover{background-position:-240px -90px;}
+오픈채팅:hover{background-position:-320px -90px;}
+채널탭:hover{background-position:-400px -90px;}
+
+
+이전,다음
+사이즈 44*44
+img_talk_button.png
+
+
+
+이전{left:0;background-position:0 0;}
+이전:hover{background-position:-70px 0;}
+
+다음{right:0;background-position:0 -70px;}
+다음:hover{background-position:-70px -70px;}
+*/
+
+#wrap {
+	width: 800px;
+	margin: 0 auto;
+	> header {
+		> h1 {
+			color: #696f74;
+			line-height: 110px;
+			text-align: center;
+			font-size: 25px;
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		} //end of h1
+
+		> .menu {
+			position: relative;
+			> ul {
+				position: absolute;
+				left: 50%;
+				top: 10px;
+				margin-left: -245px;
+				display: flex;
+				> li {
+					width: 80px;
+					height: 90px;
+					text-indent: -9999px;
+					background-image: url(./../images/btn_talk.png);
+					&:nth-child(1) {
+						background-position: 0 0;
+						&.on,
+						&:hover {
+							background-position: 0 -90px;
+						}
+					}
+					&:nth-child(2) {
+						background-position: -80px 0;
+						&.on,
+						&:hover {
+							background-position: -80px -90px;
+						}
+					}
+					&:nth-child(3) {
+						background-position: -160px 0;
+						&.on,
+						&:hover {
+							background-position: -160px -90px;
+						}
+					}
+					&:nth-child(4) {
+						background-position: -240px 0;
+						&.on,
+						&:hover {
+							background-position: -240px -90px;
+						}
+					}
+					&:nth-child(5) {
+						background-position: -320px 0;
+						&.on,
+						&:hover {
+							background-position: -320px -90px;
+						}
+					}
+					&:nth-child(6) {
+						background-position: -400px 0;
+						&.on,
+						&:hover {
+							background-position: -400px -90px;
+						}
+					}
+
+					> a {
+						display: block;
+						height: 90px;
+					}
+				} //end of li
+			} //end of ul
+		} //end of .menu
+	} //end of header
+
+	> section {
+		position: relative;
+		> .slides {
+			overflow: hidden;
+			position: absolute;
+			left: 50%;
+			top: 130px;
+			width: 478px;
+			height: 438px;
+			margin-left: -240px;
+			> .slides-container {
+				position: absolute;
+				left: 0;
+				display: flex;
+
+				> li {
+					width: 478px;
+					height: 438px;
+					text-indent: -9999px;
+					&:nth-child(1) {
+						background-image: url(./../images/img_talk_cont1.png);
+					}
+					&:nth-child(2) {
+						background-image: url(./../images/img_talk_cont2.png);
+					}
+					&:nth-child(3) {
+						background-image: url(./../images/img_talk_cont3.png);
+					}
+					&:nth-child(4) {
+						background-image: url(./../images/img_talk_cont4.png);
+					}
+					&:nth-child(5) {
+						background-image: url(./../images/img_talk_cont5.png);
+					}
+					&:nth-child(6) {
+						background-image: url(./../images/img_talk_cont6.png);
+					}
+				}
+			} //end of .slides-container
+		} //end of .slides
+
+		> div {
+			position: absolute;
+			top: 330px;
+			display: flex;
+			justify-content: space-between;
+			width: 780px;
+			text-indent: -9999px;
+			> .slides-prev {
+				display: block;
+				width: 44px;
+				height: 44px;
+				left: 0;
+				background-position: 0 0;
+				background-image: url(./../images/img_talk_button.png);
+
+				&:hover {
+					background-position: -70px 0;
+				}
+			}
+			> .slides-next {
+				display: block;
+				width: 44px;
+				height: 44px;
+				right: 0;
+				background-position: 0 -70px;
+				background-image: url(./../images/img_talk_button.png);
+				&:hover {
+					background-position: -70px -70px;
+				}
+			}
+		}
+	} //end of section
+} //end of #wrap
